@@ -109,10 +109,10 @@ public class LogBlockUsernameUpdater {
     private void readTableList() throws IOException {
         ArrayList<String> tableList = new ArrayList<>();
         //If tableList.txt doesn't exist, create it and add lb-world to file and exit
-        File file = new File("tableList.txt");
+        File file = new File("tablelist.txt");
         if (!file.exists()) {
             file.createNewFile();
-            System.out.println("Created tableList.txt. Please add the table name to the file and restart the plugin.");
+            System.out.println("Created tablelist.txt. Please add the table name to the file and restart the plugin.");
             System.exit(0);
             return;
         }
@@ -124,7 +124,7 @@ public class LogBlockUsernameUpdater {
 
         //If tableList.txt is empty, exit
         if (tableList.isEmpty()) {
-            System.out.println("tableList.txt is empty. Please add the table names on new lines and restart the plugin.");
+            System.out.println("tablelist.txt is empty. Please add the table names on new lines and restart the plugin.");
             System.exit(0);
             return;
         }
@@ -244,7 +244,7 @@ public class LogBlockUsernameUpdater {
     }
 
     private void readUUIDCache() throws IOException {
-        File uuidCacheFile = new File("UUIDCache.json");
+        File uuidCacheFile = new File("uuidcache.json");
 
         if (!uuidCacheFile.exists()) {
             System.out.println("UUIDCache.json not found! Please copy it to the same directory as this jar file.");
