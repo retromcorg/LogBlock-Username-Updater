@@ -104,7 +104,7 @@ public class LogBlockUsernameUpdater {
 
     }
 
-    String tables[] = new String[0];
+    private String tables[] = new String[0];
 
     private void readTableList() throws IOException {
         ArrayList<String> tableList = new ArrayList<>();
